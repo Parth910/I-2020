@@ -228,6 +228,7 @@
           </div>
 
 
+
         </div>
 
       </div>
@@ -538,6 +539,7 @@
         </div>
       </div> -->
 
+
   </section>
 
   <!-- <section class="ftco-section-parallax">
@@ -639,25 +641,6 @@
       if (window.navigator.onLine == true) {
         //mess =  "Your form has been sucessfully submitted. Thanks for your feedback.";
 
-        e.preventDefault();
-        var jqxhr = $.ajax({
-          url: url,
-          method: "GET",
-          dataType: "json",
-          data: $form.serializeObject()
-        }).success(
-          alert("Your form has been sucessfully submitted. See you at the workshop.")
-          ,
-          $('#f01').val(''),
-          $('#f02').val(''),
-          $('#f03').val(''),
-          $('#f04').val(''),
-          $('#f05').val(''),
-          $('#f06').val(''),
-        );
-
-      }
-      else {
         alert("You are currently offline. Kindly check your internet connection.");
       }
 
@@ -685,11 +668,18 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
+
   <script
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
+  </script>
+
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
 </body>
 
+
 </html>
+
