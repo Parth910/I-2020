@@ -228,10 +228,11 @@
           </div>
 
 
+
         </div>
 
       </div>
-      <div class="row block-9">
+      <!-- <div class="row block-9">
         <div class="col-md-12">
           <form class="bg-light p-5 contact-form"
             action="https://docs.google.com/forms/d/e/1FAIpQLSf4rgy52_cHi_InxpfB3mXWuau6C874VinbRvbTqQEZJ8XB3w/formResponse"
@@ -465,7 +466,7 @@
                         role="alert"></div>
                     </div>
                   </div>
-
+                  
                   <div class="freebirdFormviewerViewNumberedItemContainer" class="form-control">
                     <div role="listitem"
                       class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem"
@@ -475,9 +476,8 @@
                         <div class="freebirdFormviewerViewItemsItemItemTitleDescContainer">
                           <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
                             <div class="freebirdFormviewerViewItemsItemItemTitle exportItemTitle freebirdCustomFont"
-                              role="heading" aria-level="3" aria-describedby="i.desc.972925016"
-                              style="color: black !important;"><b>NEFT Number/UPI
-                                Transaction ID/DD Number:</b></div>
+                              role="heading" aria-level="3" aria-describedby="i.desc.972925016"  style="color: black !important;"><b>NEFT Number/UPI
+                              Transaction ID/DD Number:</b></div>
                           </div>
                         </div>
                       </div>
@@ -488,8 +488,7 @@
                           jsshadow jsname="W85ice">
                           <div class="quantumWizTextinputPaperinputMainContent exportContent">
                             <div class="quantumWizTextinputPaperinputContentArea exportContentArea">
-                              <div class="quantumWizTextinputPaperinputInputArea"><input type="text"
-                                  placeholder="Transaction ID/Number" class="form-control"
+                              <div class="quantumWizTextinputPaperinputInputArea"><input type="text" placeholder="Transaction ID/Number" class="form-control"
                                   class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf"
                                   autocomplete="off" tabindex="0" aria-label="NEFT Number/UPI Transaction ID/DD Number:"
                                   aria-describedby="i.desc.972925016 i.err.972925016" name="entry.1840514793" value=""
@@ -507,49 +506,6 @@
                         </div>
                       </div>
                       <div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage" id="i.err.972925016"
-                        role="alert"></div>
-                    </div>
-                  </div>
-                  <div class="freebirdFormviewerViewNumberedItemContainer" class="form-control">
-                    <div role="listitem"
-                      class="freebirdFormviewerViewItemsItemItem freebirdFormviewerViewItemsTextTextItem"
-                      jsname="ibnC6b" jscontroller="rDGJeb" jsaction="sPvj8e:e4JwSe,Dlbleb;O22p3e:e4JwSe,F0zejc;"
-                      data-required="true" data-item-id="1341645930">
-                      <div class="freebirdFormviewerViewItemsItemItemHeader">
-                        <div class="freebirdFormviewerViewItemsItemItemTitleDescContainer">
-                          <div class="freebirdFormviewerViewItemsItemItemTitleContainer">
-                            <div class="freebirdFormviewerViewItemsItemItemTitle exportItemTitle freebirdCustomFont"
-                              role="heading" aria-level="3" aria-describedby="i.desc.1341645930 i21"  style="color: black !important; font-weight: 700 !important;">Do you want
-                              Accommodation?: <span class="freebirdFormviewerViewItemsItemRequiredAsterisk"
-                                aria-label="Required question">*</span></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="freebirdFormviewerViewItemsTextItemWrapper">
-                        <div
-                          class="quantumWizTextinputPaperinputEl freebirdFormviewerViewItemsTextShortText freebirdThemedInput modeLight"
-                          jscontroller="pxq3x" jsaction="clickonly:KjsqPd; focus:Jt1EX; blur:fpfTEe; input:Lg5SV"
-                          jsshadow jsname="W85ice">
-                          <div class="quantumWizTextinputPaperinputMainContent exportContent">
-                            <div class="quantumWizTextinputPaperinputContentArea exportContentArea">
-                              <div class="quantumWizTextinputPaperinputInputArea"><input type="text" class="form-control"
-                                  class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" placeholder="YES/NO"
-                                  autocomplete="off" tabindex="0" aria-label="Do you want Accommodation?"
-                                  aria-describedby="i.desc.1341645930 i.err.1341645930" name="entry.1763773974" value=""
-                                  required dir="auto" data-initial-dir="auto" data-initial-value="" />
-                               
-                              </div>
-                              <div class="quantumWizTextinputPaperinputUnderline exportUnderline"></div>
-                              <div jsname="XmnwAc"
-                                class="quantumWizTextinputPaperinputFocusUnderline exportFocusUnderline"></div>
-                            </div>
-                          </div>
-                          <div class="quantumWizTextinputPaperinputCounterErrorHolder">
-                            <div jsname="ty6ygf" class="quantumWizTextinputPaperinputHint exportHint"></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div jsname="XbIQze" class="freebirdFormviewerViewItemsItemErrorMessage" id="i.err.1341645930"
                         role="alert"></div>
                     </div>
                   </div>
@@ -581,7 +537,8 @@
             </div>
           </form>
         </div>
-      </div>
+      </div> -->
+
 
   </section>
 
@@ -684,27 +641,11 @@
       if (window.navigator.onLine == true) {
         //mess =  "Your form has been sucessfully submitted. Thanks for your feedback.";
 
-        e.preventDefault();
-        var jqxhr = $.ajax({
-          url: url,
-          method: "GET",
-          dataType: "json",
-          data: $form.serializeObject()
-        }).success(
-          alert("Your form has been sucessfully submitted. See you at the workshop."),
-          $('#f01').val(''),
-          $('#f02').val(''),
-          $('#f03').val(''),
-          $('#f04').val(''),
-          $('#f05').val(''),
-          $('#f06').val(''),
-        );
-
-      } else {
         alert("You are currently offline. Kindly check your internet connection.");
       }
 
     })
+
   </script>
 
   <script>
@@ -727,11 +668,18 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
+
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false">
   </script>
+
   <script src="js/google-map.js"></script>
   <script src="js/main.js"></script>
 
 </body>
 
+
 </html>
+
